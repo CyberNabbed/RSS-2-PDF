@@ -1,17 +1,17 @@
-# RSS Feed Summarizer & PDF Generator
+# RSS to PDF Summarizer
 
-## What is this?
-This is a utility designed to help you digest news faster. Instead of clicking through dozens of articles, this tool grabs your favorite RSS feeds, filters out topics you don't care about, and uses Gemini (with your API key) to write concise summaries for you.
+## What this script does
+This tool takes a list of RSS feeds and converts them into a single PDF summary.
 
-Everything gets compiled into a single PDF that lands on your desktop, ready to read.
+It grabs the latest articles, filters out topics you don't want (based on a list of keywords), and uses Gemini (with your API key) to write a short summary for each one. Once it's done, it compiles the images and text into a PDF on your desktop and opens it for you.
 
 ## How it works
-1.  **Input:** When you run the app, it asks for your RSS feed URLs.
-2.  **Filtering:** It fetches the latest articles but automatically skips anything containing "forbidden words" (so you don't waste time on irrelevant topics).
-3.  **AI Summaries:** It sends the good articles to Google's AI to generate a quick summary.
-4.  **Delivery:** It grabs the article images and the new summaries, stamps them into a PDF (`rss_feed.pdf`), saves it to your Desktop, and opens it immediately.
+1.  **Input:** It asks you for RSS URLs (comma-separated).
+2.  **Filtering:** It checks the articles against a "forbidden words" list. If an article matches, it gets skipped.
+3.  **Summarization:** It sends the remaining articles to the Google Generative AI API to get a summary.
+4.  **Output:** It generates `rss_feed.pdf`, saves it to the Desktop, opens the file, and closes the application.
 
-## Quick Start
-1.  **Launch the application.**
-2.  **Paste your feeds:** When the prompt appears, paste in your RSS URLs separated by commas (e.g., `techcrunch.com/feed, nytimes.com/rss`).
-3.  **Wait for the popup:** The app will do its work, generate the file, open the PDF for you, and then close itself automatically.
+## How to use it
+1.  Run the application.
+2.  When the prompt appears, paste your feed URLs (e.g., `site1.com/rss, site2.com/feed`).
+3.  Wait a moment—the app will close itself once the PDF opens.
