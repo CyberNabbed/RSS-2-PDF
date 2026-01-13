@@ -8,7 +8,7 @@ It grabs the latest articles, filters out topics you don't want (based on a list
 ## How it works
 1.  **Input:** It asks you for RSS URLs (comma-separated).
 2.  **Filtering:** It checks the articles against a "forbidden words" list. If an article matches, it gets skipped.
-3.  **Summarization:** It sends the remaining articles to the Google Generative AI API to get a summary.
+3.  **Summarization:** It sends the remaining articles to Gemini via API to get a summary.
 4.  **Output:** It generates `rss_feed.pdf`, saves it to the Desktop, opens the file, and closes the application.
 
 ## How to use it
