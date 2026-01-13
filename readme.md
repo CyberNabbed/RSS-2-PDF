@@ -1,7 +1,7 @@
 # RSS Feed Summarizer & PDF Generator
 
 ## What is this?
-This is a utility designed to help you digest news faster. Instead of clicking through dozens of articles, this tool grabs your favorite RSS feeds, filters out topics you don't care about, and uses Google's Generative AI (with your API key) to write concise summaries for you.
+This is a utility designed to help you digest news faster. Instead of clicking through dozens of articles, this tool grabs your favorite RSS feeds, filters out topics you don't care about, and uses Gemini (with your API key) to write concise summaries for you.
 
 Everything gets compiled into a single PDF that lands on your desktop, ready to read.
 
