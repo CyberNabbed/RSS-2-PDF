@@ -1,4 +1,4 @@
-# RSS to PDF Summarizer
+# RSS to PDF Summarizer (only for testing purposes)
 
 ## What this script does
 This tool takes a list of RSS feeds and converts them into a single PDF summary.
